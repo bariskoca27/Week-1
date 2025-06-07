@@ -1,0 +1,71 @@
+/* Element selector targeting all <h1> elements */
+h1 {
+  font-size: 36px; /* Styles all <h1> headings */
+  color: navy;
+}
+
+/* Element selector targeting all <p> elements */
+p {
+  line-height: 1.5; /* Styles all paragraph text */
+  margin-bottom: 20px;
+}
+
+/* Class selector targeting elements with class 'header' */
+.header {
+  background-color: lightgray; /* Styles elements with class 'header' */
+  padding: 10px;
+}
+
+/* Class selector targeting elements with class 'btn' */
+.btn {
+  background-color: blue; /* Styles button elements with class 'btn' */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ID selector targeting the element with ID 'main' */
+#main {
+  width: 80%; /* Styles the element with ID 'main' */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* ID selector targeting the footer element with ID 'footer' */
+#footer {
+  background-color: #333; /* Styles the footer section */
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Attribute selector targeting input elements of type 'text' */
+input[type="text"] {
+  border: 1px solid #ccc; /* Styles text input fields */
+  padding: 8px;
+  width: 200px;
+}
+
+/* Attribute selector targeting links with href starting with 'https' */
+a[href^="https"] {
+  color: green; /* Styles secure links */
+  text-decoration: underline;
+}
+
+/* Pseudo-class selector targeting links on hover */
+a:hover {
+  color: red; /* Changes link color on hover */
+  text-decoration: none;
+}
+
+/* Pseudo-class selector targeting the first child of a list */
+li:first-child {
+  font-weight: bold; /* Styles the first item in a list */
+}
+
+/* Pseudo-class selector targeting the last child of a list */
+li:last-child {
+  margin-bottom: 0;
+}
