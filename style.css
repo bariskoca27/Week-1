@@ -1,102 +1,75 @@
-/* Step 1: Universal Selector */
-/* This selector applies styles to all elements in the document */
-* {
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    font-family: 'Helvetica Neue', sans-serif; /* Sets a personal font */
-}
-
-/* Step 2: Type Selector */
-/* This selector targets all <h1> elements */
-h1 {
-    color: blue; /* Sets the text color to blue */
-    text-decoration: underline; /* Applies an underline */
-}
-
-/* Step 3: Class Selector */
-/* This selector targets elements with the class 'heading1' */
-.heading1 {
-    color: pink; /* Sets the text color to pink */
-    text-decoration: italic; /* Applies italic style */
-}
-
-/* Step 4: Class Selector */
-/* This selector targets elements with the class 'heading3' */
-.heading3 {
-    color: green; /* Sets the text color to green */
-    text-decoration: underline; /* Applies an underline */
-}
-
-/* Step 5: Class Selector */
-/* This selector targets elements with the class 'bold' */
-.bold {
-    font-weight: bold; /* Makes the text bold */
-}
-
-/* Step 6: ID Selector */
-/* This selector targets the element with id 'title' */
-#title {
-    color: orange; /* Sets the text color to orange */
-    text-decoration: none; /* Removes underline */
-}
-
-/* Step 7: Type Selector */
-/* This selector targets all <p> elements */
-p {
-    margin: 15px 0; /* Adds vertical margin to paragraphs */
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the body */
+    background-color: #f4f4f4; /* Light gray background color */
+    color: #333; /* Dark gray text color */
     line-height: 1.6; /* Increases line height for readability */
+    padding: 20px; /* Adds padding around the body */
+    text-align: center; /* Centers text in the body */
 }
 
-/* Step 8: Type Selector */
-/* This selector targets all <ul> elements */
-ul {
-    margin: 25px 0; /* Adds vertical margin to unordered lists */
-    padding-left: 20px; /* Adds left padding to unordered lists */
+header {
+    background-color: lightblue; /* Light blue background for the header */
+    padding: 20px; /* Padding around the header */
 }
 
-/* Step 9: Type Selector */
-/* This selector targets all <li> elements */
-li {
-    margin: 5px 0; /* Adds vertical margin to list items */
-    color: darkgray; /* Sets the text color to dark gray */
+footer {
+    background-color: lightgray; /* Light gray background for the footer */
+    padding: 10px; /* Padding around the footer */
 }
 
-/* Step 10: Type Selector */
-/* This selector targets all <a> elements */
-a {
-    color: red; /* Sets the text color of links to red */
-    text-decoration: none; /* Removes underline from links */
+/* Fix for the hidden text */
+.hidden-text {
+    display: block; /* Makes the hidden text visible */
+    margin: 20px 0; /* Adds margin for spacing */
 }
 
-/* Step 11: Class Selector */
-/* This selector targets elements with the class 'highlight' */
-.highlight {
-    background-color: yellow; /* Sets the background color to yellow */
-    font-weight: bold; /* Makes the text bold */
+/* Container for items */
+.container {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center items horizontally */
 }
 
-/* Step 12: Class Selector */
-/* This selector targets elements with the class 'new' */
-.new {
-    color: purple; /* Sets the text color to purple */
+/* Styles for items */
+.item {
+    flex: 1; /* Allows items to grow and fill the available space */
+    padding: 10px; /* Padding inside items */
+    background-color: lightgreen; /* Light green background for items */
+    margin: 5px; /* Adds space between items */
+    text-align: center; /* Centers text inside items */
 }
 
-/* Step 13: Class Selector */
-/* This selector targets elements with the class 'something' */
-.something {
-    color: blue; /* Sets the text color to blue */
+/* Styles for the form */
+form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Adds padding inside the form */
+    border-radius: 8px; /* Rounds the corners of the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-/* Step 14: Class Selector */
-/* This selector targets elements with the class 'special' */
-.special {
-    color: maroon; /* Sets the text color to maroon */
+/* Styles for input fields and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Adds padding inside input fields */
+    margin-bottom: 15px; /* Adds space below input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounds the corners of input fields */
 }
 
-/* Step 15: ID Selector */
-/* This selector targets the element with id 'uniqueDiv' */
-#uniqueDiv {
-    color: green; /* Sets the text color to green */
-    font-size: 22px; /* Sets the font size to 22 pixels */
-    font-weight: bold; /* Makes the text bold */
+/* Styles for the submit button */
+button {
+    background-color: #4A90E2; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Removes border */
+    padding: 10px 15px; /* Adds padding */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
 }
