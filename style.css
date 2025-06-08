@@ -1,75 +1,236 @@
-/* Basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Sets the font for the body */
-    background-color: #f4f4f4; /* Light gray background color */
-    color: #333; /* Dark gray text color */
-    line-height: 1.6; /* Increases line height for readability */
-    padding: 20px; /* Adds padding around the body */
-    text-align: center; /* Centers text in the body */
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  text-align: left;
 }
 
+/* Navbar styles */
 header {
-    background-color: lightblue; /* Light blue background for the header */
-    padding: 20px; /* Padding around the header */
+  background: #222;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.2rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  text-align: left;
+}
+
+.nav-links li a:hover {
+  color: #55acee;
+}
+
+/* Section styles */
+.section {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #222;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+  padding: 1rem;
+  flex: 1 1 250px;
+  min-width: 250px;
+  max-width: 45%;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+/* Contact Section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+#contact label {
+  font-weight: 600;
+  text-align: left;
+}
+
+#contact input, #contact textarea {
+  padding: 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+#contact textarea {
+  resize: vertical;
+}
+
+#contact button[type="submit"] {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 0;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: left;
+}
+
+#contact button[type="submit"]:hover {
+  background: #55acee;
+  color: #222;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.contact-info a {
+  color: #222;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-align: left;
+}
+
+.contact-info a:hover {
+  color: #55acee;
+}
+
+/* Footer */
 footer {
-    background-color: lightgray; /* Light gray background for the footer */
-    padding: 10px; /* Padding around the footer */
+  background: #222;
+  color: #fff;
+  text-align: left;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
 }
 
-/* Fix for the hidden text */
-.hidden-text {
-    display: block; /* Makes the hidden text visible */
-    margin: 20px 0; /* Adds margin for spacing */
+footer a {
+  color: #55acee;
+  text-decoration: underline;
 }
 
-/* Container for items */
-.container {
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: center; /* Center items horizontally */
+/* Responsive Design */
+@media (max-width: 900px) {
+  #about {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .projects-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  .project-card {
+    max-width: 100%;
+    text-align: left;
+  }
 }
 
-/* Styles for items */
-.item {
-    flex: 1; /* Allows items to grow and fill the available space */
-    padding: 10px; /* Padding inside items */
-    background-color: lightgreen; /* Light green background for items */
-    margin: 5px; /* Adds space between items */
-    text-align: center; /* Centers text inside items */
-}
-
-/* Styles for the form */
-form {
-    background-color: #fff; /* White background for the form */
-    padding: 20px; /* Adds padding inside the form */
-    border-radius: 8px; /* Rounds the corners of the form */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-}
-
-/* Styles for input fields and textareas */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-    width: 100%; /* Full width for input fields */
-    padding: 10px; /* Adds padding inside input fields */
-    margin-bottom: 15px; /* Adds space below input fields */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Rounds the corners of input fields */
-}
-
-/* Styles for the submit button */
-button {
-    background-color: #4A90E2; /* Blue background color */
-    color: white; /* White text color */
-    border: none; /* Removes border */
-    padding: 10px 15px; /* Adds padding */
-    border-radius: 4px; /* Rounds the corners of the button */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-}
-
-button:hover {
-    background-color: #357ABD; /* Darker blue on hover */
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  .section {
+    padding: 1rem;
+    text-align: left;
+  }
 }

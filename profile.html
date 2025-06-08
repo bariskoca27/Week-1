@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baris Koca | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Baris</h1> <!-- Your name -->
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <span class="brand">Baris Koca</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="your-photo.jpg" alt="A photo of me" class="profile-pic" /> <!-- Replace with your photo -->
-            <p>Hello! I'm Baris, a web developer with a passion for creating beautiful and functional websites. I enjoy learning new technologies and improving my skills.</p>
-        </section>
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <img src="https://img.freepik.com/free-vector/coding-man-concept-illustration_114360-2417.jpg?w=740" alt="Baris Koca profile caricature" class="profile-img"/>
+      <p>I am a Business Management graduate with a BA (Hons), complemented by strong technical expertise in Networking, Cyber Security, Web Development and Design, and Penetration Testing. With a multidisciplinary background spanning both business and IT sectors, I bring a unique blend of analytical thinking, technical proficiency, and strategic insight.</p>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <article class="project">
-                <img src="project1.jpg" alt="Project 1" class="project-image" /> <!-- Replace with project image -->
-                <h3>Project 1</h3>
-                <p>A brief description of Project 1. This project involved using HTML, CSS, and JavaScript to create a responsive web application.</p>
-            </article>
-            <article class="project">
-                <img src="project2.jpg" alt="Project 2" class="project-image" /> <!-- Replace with project image -->
-                <h3>Project 2</h3>
-                <p>A brief description of Project 2. This project focused on building a dynamic website using React and Node.js.</p>
-            </article>
-        </section>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://img.freepik.com/free-vector/software-developer-programmer-working-coding-computer_1150-43547.jpg?w=740" alt="Coding Caricature Project 1" />
+          <h3>Bio</h3>
+          <p>My experience across multiple industries has equipped me with a broad range of transferable skills, including problem-solving, project coordination, client communication, and digital innovation. I have a strong understanding of cyber security principles and practices, coupled with hands-on experience in ethical hacking and system testing. In addition, my skills in web development and design allow me to approach projects with both a creative and functional mindset.
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required />
+Driven, adaptable, and always eager to learn, I thrive in dynamic environments and enjoy taking on new challenges that bridge the gap between technology and business. I am now looking to apply my diverse skill set in a forward-thinking organisation where I can contribute to impactful projects and continue to grow both professionally and personally.</p>
+        </article>
+        <article class="project-card">
+          <img src="https://img.freepik.com/free-vector/bug-fixing-concept-illustration_114360-8172.jpg?w=740" alt="Coding Caricature Project 2" />
+          <h3>Summary</h3>
+          <p>I am a highly motivated and results-oriented professional with a BA (Hons) in Business Management, combined with technical expertise in Networking, Cyber Security, Web Development, and Penetration Testing. My experience across multiple industries has given me a strong foundation in both business strategy and technology, along with a wide range of transferable skills.
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="yourname@example.com" required />
+I have practical experience in ethical hacking, network security, and full-stack web development, and I approach every project with a focus on efficiency, problem-solving, and innovation. I am confident working independently or as part of a team, and I have successfully managed projects, supported business operations, and delivered technical solutions that align with organisational goals.
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+With excellent communication skills, strong attention to detail, and the ability to adapt quickly in fast-paced environments, I am well-prepared to contribute to forward-thinking organisations looking to integrate business insight with modern technology.</p>
+        </article>
+        <article class="project-card">
+          <img src="https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2418.jpg?w=740" alt="Coding Caricature Project 3" />
+          <h3>Technical Project</h3>
+          <p>This project showcases my hands-on experience in coding, debugging, and deploying secure web applications. From concept to launch, I have participated in every step of the process and ensured best practices in security and accessibility.</p>
+        </article>
+      </div>
+    </section>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" required placeholder="Your Name" />
 
-    <footer>
-        <p>&copy; 2023 Baris. All rights reserved.</p>
-        <p>Contact me at: <a href="mailto:myemail@example.com">myemail@example.com</a> | <a href="tel:+1234567890">+1234567890</a></p>
-    </footer>
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="Your Email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:bariskoca@example.com">bariskoca@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 Baris Koca. All rights reserved.<br>
+      Illustrations by <a href="https://www.freepik.com/" target="_blank" rel="noopener">Freepik</a>
+    </p>
+  </footer>
 </body>
 </html>
