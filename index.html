@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Personal Page</title>
+    <!-- Step 1: Head Section -->
+    <meta charset="UTF-8" /> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive design -->
+    <title>My Personal Page</title> <!-- Title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to an external CSS file for styling -->
 </head>
 <body>
-  <h1>Baris</h1>
-  
-  <p>Feel free to reach me at <a href="mailto:myemail@example.com">myemail@example.com</a></p>
-  
-  <p>I like to build websites and learn new tech. When I'm not coding, I enjoy reading.</p> 
-  <img src="6840478.png" alt="A photo of me" />
+    <!-- Step 2: Main Content -->
+    <h1>Baris</h1> <!-- Main heading displaying the name -->
+
+    <p>Feel free to reach me at <a href="mailto:myemail@example.com">myemail@example.com</a></p>
+    <!-- Paragraph with a clickable email link -->
+
+    <p>I like to build websites and learn new tech. When I'm not coding, I enjoy reading.</p>
+    <!-- Personal interests paragraph -->
+
+    <img src="6840478.png" alt="A photo of me" />
+    <!-- Image element displaying a photo with alternative text for accessibility -->
+
+    <h2>Contact Me</h2> <!-- Subheading for the contact form section -->
+    <form>
+        <!-- Step 3: Contact Form -->
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Your full name" /><br /><br />
+        <!-- Input field for the user's name -->
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="yourname@example.com" /><br /><br />
+        <!-- Input field for the user's email address -->
+
+        <label for="phone">Phone Number:</label><br />
+        <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" /><br /><br />
+        <!-- Input field for the user's phone number -->
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea><br /><br />
+        <!-- Textarea for the user to write a message -->
+
+        <label for="reason">Reason for Contact:</label><br />
+        <select id="reason" name="reason">
+            <option value="">Select a reason</option>
+            <option value="job">Job Inquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select><br /><br />
+        <!-- Dropdown menu for selecting the reason for contact -->
+
+        <button type="submit">Submit</button>
+        <!-- Submit button for the form -->
+    </form>
+
+    <h1 class="new">CSS Selectors Demonstration</h1>
+    <!-- Heading for the CSS demonstration section -->
+
+    <p>This is a <strong>paragraph</strong> with a <span class="highlight">highlighted span</span>.</p>
+    <!-- Paragraph with a strong element and a highlighted span -->
+
+    <p class="special">This paragraph has a special class.</p>
+    <!-- Paragraph that uses a special class for styling -->
+
+    <div id="uniqueDiv">This div has a unique ID.</div>
+    <!-- Div element with a unique ID for specific styling -->
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li class="highlight">Third item with a class</li>
+        <!-- Unordered list with items, the last item has a class for additional styling -->
+    </ul>
 </body>
 </html>
-
-<h2>Contact Me</h2>
-<form>
-
-  <label for="name">Name:</label><br />
-  <input type="text" id="name" name="name" placeholder="Your full name" /><br /><br />
-
-  <label for="email">Email:</label><br />
-  <input type="email" id="email" name="email" placeholder="yourname@example.com" /><br /><br />
-
-  <label for="phone">Phone Number:</label><br />
-  <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" /><br /><br />
-
-  <label for="message">Message:</label><br />
-  <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea><br /><br />
-
-  <label for="reason">Reason for Contact:</label><br />
-  <select id="reason" name="reason">
-    <option value="">Select a reason</option>
-    <option value="job">Job Inquiry</option>
-    <option value="feedback">Feedback</option>
-    <option value="other">Other</option>
-  </select><br /><br />
-
-  <button type="submit">Submit</button>
-</form>
