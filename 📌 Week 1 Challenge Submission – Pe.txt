@@ -1,0 +1,44 @@
+📌 Week 1 Challenge Submission – Personal Portfolio Webpage
+
+✅ What I Have Done:
+
+1. 🧭 Built a Sticky Navigation Bar
+I created a responsive and sticky navigation bar that stays fixed at the top as users scroll. It links to the About, Projects, and Contact sections of the page.
+🔧 CSS tools used: display: flex, justify-content, gap, and position: sticky.
+
+2. 👤 Developed an About Section
+I added an "About Me" section that includes a profile image and short bio text. This section uses Flexbox for layout to align the image and text horizontally (or vertically on smaller screens).
+🔧 CSS tools used: display: flex, gap, border-radius, and responsive media queries.
+
+3. 🗂️ Created a Projects Section
+I showcased three project cards, each with an image and descriptive text. I designed them in a grid layout and added hover effects for better user interaction.
+🔧 CSS tools used: flex-wrap, box-shadow, hover:transform, and transition.
+
+4. 📬 Designed a Contact Form
+I added a contact form with input fields for name, email, and a message. I also included clickable email and phone links using mailto: and tel:.
+🔧 CSS tools used: flex-direction: column, input styling, and :hover effects for the button.
+
+5. 📱 Ensured Full Responsiveness
+I used media queries to make the entire site mobile- and tablet-friendly. Content reflows properly, and navigation remains usable on all screen sizes.
+🔧 CSS tools used: @media queries, flexible widths, and adaptive layout with Flexbox.
+
+6. 🎨 Applied Consistent Styling with CSS
+I used an external CSS file to control the site's layout, colors, fonts, and spacing. I used Google Fonts (Montserrat), consistent font sizes, hover color transitions, and a professional color palette.
+🔧 CSS tools used: font-family, color, padding, margin, border, box-shadow, hover effects, and selectors (class, ID, and element).
+
+7. 🧾 Footer Section
+I created a footer that includes copyright information and illustration credits.
+
+🚀 Deployment on GitHub Pages
+
+🗂️ Code pushed to a public GitHub repository.🔗 https://github.com/bariskoca27/Week-1
+
+🌍 Site successfully deployed via GitHub Pages and is accessible at the following link:🔗 https://bariskoca27.github.io/Week-1/ 
+
+🔚 Summary
+
+This challenge helped me practice semantic HTML, external CSS styling, responsive Flexbox layouts, form creation, and GitHub Pages deployment.
+The site is now fully functional and live online. 🌐✅
+
+— Baris Koca
+Step8Up Bootcamp Student — Week 1 Challenge
